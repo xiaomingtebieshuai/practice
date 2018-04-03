@@ -15,10 +15,15 @@ import java.util.Scanner;
  */
 public class Test {
     public static void main(String[]args){
-        int []array={-11,-9,2,-6};
-        System.out.println(Test.getMax(array));
 
 
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
+        int array[]=new int[number];
+        for(int i=0;i<number;i++){
+            array[i]=sc.nextInt();
+        }
+        System.out.print(Test.getMax(array));
     }
 
     /**
@@ -69,6 +74,7 @@ public class Test {
             }
         }
         return temp;
+
     }
 
 
